@@ -1,0 +1,28 @@
+{
+  "id": 16634682,
+  "name": "main-branch-protection",
+  "target": "branch",
+  "source_type": "Repository",
+  "source": "relativityAI/relativity-portfolio",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "refs/heads/main"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "required_linear_history"
+    }
+  ],
+  "bypass_actors": []
+}
